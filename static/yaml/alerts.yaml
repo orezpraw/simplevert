@@ -1,0 +1,6 @@
+- title: Server Reboot for Upgrade
+  severity: warning
+  date: 3/30/2014
+  key: 5
+  body: |
+      Just wanted to let you all know that we restarted the mining server briefly at about 8:35 GMT to release a new patch.
