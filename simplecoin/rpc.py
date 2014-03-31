@@ -83,7 +83,7 @@ class RPCClient(object):
         pids = {}
         bids = {}
         for user, amount, id in payouts:
-            if user.startswith('D'):
+            if user.startswith('V'):
                 totals.setdefault(user, 0)
                 totals[user] += amount
                 pids.setdefault(user, [])
