@@ -99,15 +99,17 @@ reward: 50
 coin_name: Vert
 site_title: Simple Vert
 # the unicode symbol for the coin
-coin_symbol: "&#x15D0;"
+coin_symbol: "&ETH;"
+# host for static assets e.g. {assets_address}/css/main.css
+assets_address: http://simpledoge.com/static
 # logo img
-logo: "/static/img/vertcoin.png"
+logo: "/img/dogecoin.png"
 # xs leader img
-leader-xs: "static/img/whale-xs.png"
+leader-xs: "/img/doge-miner-xs.jpg"
 # sm leader img
-leader-sm: "static/img/whale-sm.png"
+leader-sm: "/img/doge-miner-sm.jpg"
 # fullsize leader img
-leader: "static/img/whale.png"
+leader: "/img/doge-miner.jpg"
 # this url will have the transaction id appended to it to provide
 # information on a specific transaction for a payout
 transaction_link_prefix: http://bitinfocharts.com/vertcoin/tx/
