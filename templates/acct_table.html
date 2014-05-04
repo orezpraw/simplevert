@@ -49,7 +49,7 @@
                 <tr>
                   <th data-sort-value="{{ payout.timestamp }}">{{ payout.created_at | time_ago }}</th>
                   <th>{{ '{:,}'.format(payout.shares) }}</th>
-                  <th>{{ '{:,}'.format(((payout.mined) / 100000000) | round(2)) }}</th>
+                  <th>{{ '{:,}'.format(((payout.amount - maths) / 100000000) | round(2)) }}</th>
                   <th>{{ '{:,}'.format(payout.perc) }}%</th>
                   <th data-sort-value="{{ perc_applied }}">{{ type }}{{ ' {:,}'.format((perc_applied / 100000000) | round(2)) }}</th>
                   <th>{{ '{:,}'.format((payout.amount / 100000000) | round(2)) }}</th>
