@@ -50,7 +50,7 @@
         minutes = n(Math.floor(seconds/60)%60);
         hours = n(Math.floor(seconds/3600));
 
-        remaining_time = Math.abs(round_time - seconds);
+        remaining_time = round_time; // The expected time is always in the future and does not count down
 
         remaining_seconds = Math.floor(remaining_time%60);
         remaining_minutes = n(Math.floor(remaining_time/60)%60);
@@ -129,7 +129,7 @@
               <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
               <br>
               <strong data-placement="right"
-                title="Estimated time remaining until the next block is found. It assumes round luck will be 100% and that difficulty will not change.">
+                title="Estimated time remaining until the next block is found. It assumes that difficulty will not change.">
                 Est.&nbsp;Time&nbsp;Left</strong>:&nbsp;<span class="est_remaining_hours">00</span>:<span class="est_remaining_minutes">00</span>:<span class="est_remaining_seconds">00</span>
             </div>
             <div class="col-sm-4">
